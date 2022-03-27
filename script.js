@@ -18,11 +18,13 @@ const colors = {
  normal: '#F5F5F5'
 }
 
+//getting the colors into a variable.
 const main_types = Object.keys(colors)
-console.log(main_types)
+//console.log(main_types)
 
 
-//getPokemon gets an interated ID.
+//getPokemon gets an iterated ID.
+//the reason we use fetch + get functions (2) is the API's build, Array of objects.
 
 async function fetchPokemons()  {
     for(let i = 1; i<pokemon_count; i++) {
